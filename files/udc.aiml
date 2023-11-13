@@ -2,40 +2,204 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>I have no answer for that.You should find the right answer to your question on our website</template>
   </category>
+  
+  <category>
+      <pattern>^ HELLO ^</pattern>
+      <template>Hi, Welcome to the educational organization Health 4 Pro !
+      Secure your future with top-notch certifications in medical field! Health 4 pro is committed to preparing you to
+      face the specific challenges of the medical sector.
+      How can I assit you ?</template>
+  </category>
+  
+  <category>
+      <pattern>^ <set>hello</set> ^</pattern>
+      <template><srai>^ HELLO ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ TRAINING COURSES ^</pattern>
+      <template>Our team of medical experts and experienced trainers will guide you to excellence in critical areas through four training courses that are :
+                    1. Handling
+                    2. Fire security
+                    3. Violence managment
+                    4. Hygiene practices.
+                    
+                Wich one do you want to discover ?</template>
+  </category>
+  
+  <category>
+      <pattern>^ <set>trainingcourses</set> ^</pattern>
+      <template><srai>^ TRAINING COURSES ^</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ HANDLING ^</pattern>
+      <template>The module "Handling" allows you to gain expertise in safely handling and operating various
+      medical equipment, essential for providing quality patient care and ensuring the proper functioning of 
+      medical devices.For more informations or to register at this training, contact us by phone 0908070605 or 
+      by mail health4pro@gmail or visit our website 
+      <link>
+          <text>health4pro.com</text>
+          <url>https://view.genial.ly/653fc5050b8470001197e3e5/presentation-health-for-pro</url>
+      </link>
+<reply>
+    <text>Return to training courses</text>
+    <postback>^ TRAINING COURSES ^</postback>
+</reply>
+<button>
+    <text>to register</text>
+    <url>https://docs.google.com/forms/d/e/1FAIpQLSeZYVqX8w-rhYmOenOrSf98keriq7i8-NRr5rO6catyau3ePQ/viewform?usp=pp_url</url>
+</button></template>
+  </category>
+  
+  <category>
+      <pattern>^ FIRE SECURITY ^</pattern>
+      <template>Learn essential skills and knowledge to prevent and manage fire hazards in medical settings, 
+      ensuring the safety of patients and healthcare professionnals. For more informations or to register at 
+      this training, contact us by phone 0908070605 or by mail
+      health4pro@gmail or visit our website 
+      <link>
+          <text>health4pro.com</text>
+          <url>https://view.genial.ly/653fc5050b8470001197e3e5/presentation-health-for-pro</url>
+      </link>
+<reply>
+    <text>Return to training courses</text>
+    <postback>^ TRAINING COURSES ^</postback>
+</reply>
+<button>
+    <text>to register</text>
+    <url>https://docs.google.com/forms/d/e/1FAIpQLSeZYVqX8w-rhYmOenOrSf98keriq7i8-NRr5rO6catyau3ePQ/viewform?usp=pp_url</url>
+</button></template>
+  </category>
+  
+  <category>
+      <pattern>^ VIOLENCE MANAGEMENT ^</pattern>
+      <template>Acquire techniques and strategies for effectively managing and de-escalating potential violent 
+      situations, promoting a safe and secure healthcare environnement. For more informations or to register at 
+      this training, contact us by phone 0908070605 or by mail
+      health4pro@gmail or visit our website 
+      <link>
+          <text>health4pro.com</text>
+          <url>https://view.genial.ly/653fc5050b8470001197e3e5/presentation-health-for-pro</url>
+      </link>
+<reply>
+    <text>Return to training courses</text>
+    <postback>^ TRAINING COURSES ^</postback>
+</reply>
+<button>
+    <text>to register</text>
+    <url>https://docs.google.com/forms/d/e/1FAIpQLSeZYVqX8w-rhYmOenOrSf98keriq7i8-NRr5rO6catyau3ePQ/viewform?usp=pp_url</url>
+</button></template>
+  </category>
+  
+  <category>
+      <pattern>^ HYGIENE PRACTISES ^</pattern>
+      <template>Understand the critical importance of hygiene in healthcare, from infection control to sanitation, 
+      to maintain the highest standards of cleanliness and safety.For more informations or to register at 
+      this training, contact us by phone 0908070605 or by mail
+      health4pro@gmail or visit our website 
+      <link>
+          <text>health4pro.com</text>
+          <url>https://view.genial.ly/653fc5050b8470001197e3e5/presentation-health-for-pro</url>
+      </link>
+<reply>
+    <text>Return to training courses</text>
+    <postback>^ TRAINING COURSES ^</postback>
+</reply>
+<button>
+    <text>to register</text>
+    <url>https://docs.google.com/forms/d/e/1FAIpQLSeZYVqX8w-rhYmOenOrSf98keriq7i8-NRr5rO6catyau3ePQ/viewform?usp=pp_url</url>
+</button> </template>
+   
+  </category>
+  
+  <category>
+      <pattern>^ HYGIENE ^</pattern>
+      <template><srai>^ HYGIENE PRACTISES</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ ENROLL ^</pattern>
+      <template>To enroll at our courses, visit our website
+      <link>
+          <text>health4pro.com</text>
+          <url>https://view.genial.ly/653fc5050b8470001197e3e5/presentation-health-for-pro</url>
+      </link> 
+<button>
+    <text>to register</text>
+    <url>https://docs.google.com/forms/d/e/1FAIpQLSeZYVqX8w-rhYmOenOrSf98keriq7i8-NRr5rO6catyau3ePQ/viewform?usp=pp_url</url>
+</button></template>
+  </category>
+  
+  <category>
+      <pattern>^ <set>enroll</set> ^</pattern>
+      <template><srai>^ ENROLL ^</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ COST ^</pattern>
+          <template>All of our courses cost 240€ per day. Your OPCO or CPF may cover the cost of your course</template>
+  </category>
+  
+  <category>
+      <pattern>^ <set>cost</set> ^</pattern>
+      <template><srai>^ COST ^</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ ADDRESS ^</pattern>
+      <template>Our training centre takes place at 18 quai Claude Bernard 69365 LYON CEDEX 
+<button>
+    <text>How to come</text>
+    <url>https://maps.app.goo.gl/KowZwRUDQoC3EBvb6</url>
+</button></template>
+  </category>
+  
+   <category>
+      <pattern>^ <set>address</set> ^</pattern>
+      <template><srai>^ ADDRESS ^</srai></template>
+  </category> 
+  
+  <category>
+      <pattern>^ CONTACT ^</pattern>
+      <template>You can contact us by phone at 0908070605 or by mail health4pro@gmail.com</template>
+  </category>
+  
+ <category>
+      <pattern>^ <set>contact</set> ^</pattern>
+      <template><srai>^ CONTACT ^</srai></template>
+  </category>  
+  
+  <category>
+      <pattern>^ CALENDAR ^</pattern>
+      <template>To know the dates of our courses, visit our website
+      <link>
+          <text>health4pro.com</text>
+          <url>https://view.genial.ly/653fc5050b8470001197e3e5/presentation-health-for-pro</url>
+      </link></template>
+  </category>
+  
+   <category>
+      <pattern>^ <set>calendar</set> ^</pattern>
+      <template><srai>^ CALENDAR ^</srai></template>
+  </category>  
+  
+  <category>
+      <pattern>^ TRAINERS ^</pattern>
+      <template>All of our trainers are professionnals recognised by the professionnal as a whole. Their 
+      extensive experience will help you achieve your objectives.If you want to know better on them, find out their 
+      courses on our website
+      <link>
+          <text>health4pro.com</text>
+          <url>https://view.genial.ly/653fc5050b8470001197e3e5/presentation-health-for-pro</url>
+      </link></template>
+  </category>
+  
+  <category>
+      <pattern>^ <set>trainers</set></pattern>
+      <template><srai>^ TRAINERS ^</srai></template>
+  </category>
+  
 </aiml>
-<category>
-  <pattern>INTRODUCTION TO HEALTH 4 PRO</pattern>
-  <template>
-    Health 4 Pro is a leading training organization providing specialized programs for healthcare professionals. Our mission is to empower healthcare professionals with the latest knowledge and skills to excel in their fields.
-  </template>
-</category>
 
-<category>
-  <pattern>AVAILABLE TRAINING PROGRAMS</pattern>
-  <template>
-    We offer a diverse range of training programs tailored to the needs of various healthcare professionals, including (insert specific programs here). Visit our website for more details.
-  </template>
-</category>
-
-<category>
-  <pattern>ADVANTAGES OF OUR PROGRAMS</pattern>
-  <template>
-    Our programs are designed to provide hands-on experience and practical knowledge that directly applies to real-world healthcare scenarios. Participants benefit from interactive learning and expert guidance.
-  </template>
-</category>
-
-<category>
-  <pattern>ENROLLMENT PROCESS</pattern>
-  <template>
-    To enroll in any of our programs, please visit our website and follow the instructions provided on the enrollment page. Our team is also available to assist you throughout the process.
-  </template>
-</category>
-
-<category>
-  <pattern>LOCATION OF TRAINING FACILITIES</pattern>
-  <template>
-    Our training facilities are located in (insert location). You can find detailed directions on our website, or feel free to contact us for any assistance regarding the location.
-  </template>
-</category>
